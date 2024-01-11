@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__skills" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__media" href="#media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__projects" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__clients" href="#clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__contact" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+      <section id="bio" class="bio">
+        <div class="bio__data">
+          <h1 class="bio__heading">Hi There, I’M A Full Stack Developer</h1>
+          <p class="objective">
+            My name is <span class="bio__name">Mahmoud Mansy</span>, a
+            Biomedical Engineering Student at
+            <a class="bio__almdrasa" href="https://eng.cu.edu.eg/en/"
+              >Cairo University</a
+            >, Innovator, Problem-solver, Passionate Contributor to Impactful
+            Projects. Connect on
+
+            <a class="bio__twitter" href="https://github.com/MMansy19"
+              >GitHub
+            </a>
+            &
+            <a
+              class="bio__linkedin"
+              href="https://www.linkedin.com/in/mahmoud-mansy-a189a5232/"
+            >
+              LinkedIn</a
+            >.
+          </p>
+          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
+          <a class="bio__links find-out-link" href="./assets/myResume.pdf">
+            Download CV <span class="bio__arrow">↓</span>
+          </a>
+        </div>
+        <div class="bio__pic"></div>
+      </section>
+    </div>
+  </body>
+</html>
