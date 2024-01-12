@@ -1,38 +1,32 @@
-@import "./mixins";
-
-.projects {
-  &__main {
-    @include twoColumns(7.4rem, 7.5rem);
-    display: grid;
-  }
-
-  &__img {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-  }
-
-  &__data {
-    align-self: center;
-  }
-
-  &__description {
-    line-height: 1.5;
-  }
-
-  &__link {
-    color: var(--color-darker-blue);
-    font-family: var(--font-family-poppins);
-    font-weight: var(--font-weight-medium);
-    margin-top: 2.3rem;
-  }
-
-  &__link::after {
-    content: "";
-    display: inline-block;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-image: url("./images/external-icon.png");
-    background-size: contain;
-    margin-left: 0.6rem;
-  }
+.projects__main {
+  -moz-column-gap: 7.4rem;
+  column-gap: 7.4rem;
+  row-gap: 7.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+.projects__img {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+.projects__data {
+  align-self: center;
+}
+.projects__description {
+  line-height: 1.5;
+}
+.projects__link {
+  color: var(--color-darker-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+  margin-top: 2.3rem;
+}
+.projects__link::after {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("./images/external-icon.png");
+  background-size: contain;
+  margin-left: 0.6rem;
 }

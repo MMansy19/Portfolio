@@ -1,3 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -17,7 +46,7 @@ body,
   display: grid;
   row-gap: 11rem;
   margin: 0 auto;
-  max-width: calc(var(--container-width) + calc(var(--gutter) * 2));
+  max-width: calc(var(--container-width) + var(--gutter) * 2);
   padding-inline: var(--gutter);
 }
 

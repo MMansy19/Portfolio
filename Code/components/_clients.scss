@@ -1,5 +1,5 @@
 .clients__opinions {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
   font-size: var(--font-size-40);
   line-height: 1.7;
 }
@@ -7,6 +7,7 @@
 .clients__wrapper {
   display: flex;
   overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
 }
 

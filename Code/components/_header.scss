@@ -2,6 +2,7 @@
   padding: 3rem 0; /* ✅ */
   display: flex; /* ✅ */
   justify-content: center; /* ✅ */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: var(--color-background);
@@ -40,7 +41,6 @@
 .navigation__link:hover,
 .navigation__link:active {
   text-decoration: underline; /* ✅ */
-  color: var(--color-text); /* ✅ */
 }
 
 .burger-menu__checkbox {
