@@ -1,0 +1,54 @@
+@media (max-width: 500px) {
+  .bio__pic {
+    width: 100%;
+  }
+  .header {
+    padding: 0;
+  }
+  .header::before {
+    z-index: 0;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 0;
+    align-self: center;
+    cursor: pointer;
+  }
+  .burger-menu__bar {
+    height: 0.3rem;
+    width: 4.375rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+  .burger-menu__checkbox:checked + .navigation {
+    top: 100%;
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+  .navigation {
+    position: absolute;
+    padding: 3rem 0;
+    width: 100%;
+    top: 0;
+    border-bottom: 0.1rem solid var(--color-text);
+    z-index: -1;
+    width: 100vw;
+  }
+  .navigation__list {
+    justify-content: center;
+  }
+  .toggle {
+    padding: 3rem 0;
+    z-index: 1;
+  }
+} /*# sourceMappingURL=style.css.map */
