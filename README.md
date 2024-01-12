@@ -5,12 +5,7 @@ Welcome to my portfolio! I'm Mahmoud Mansy, a Full Stack Developer with a passio
 ## Bio
 Hi there! I'm Mahmoud Mansy, a Biomedical Engineering Student at [Cairo University](https://eng.cu.edu.eg/en/), and a Full Stack Developer. I bring a unique blend of technical expertise, problem-solving skills, and a passion for impactful projects. Connect with me on [GitHub](https://github.com/MMansy19) and [LinkedIn](https://www.linkedin.com/in/mahmoud-mansy-a189a5232/).
 
-### Objectives
-- **Innovator:** Constantly exploring new technologies and approaches.
-- **Problem-solver:** Solving complex challenges with creative solutions.
-- **Contributor:** Passionate about contributing to impactful projects.
-
-[Say Hi](#contact) | [Download CV](./assets/myResume.pdf)
+### [My Resume](./assets/myResume.pdf)
 
 ## Skills
 ### Programming Languages
