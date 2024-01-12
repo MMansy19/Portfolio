@@ -1,0 +1,95 @@
+.header {
+  padding: 3rem 0; /* ✅ */
+  display: flex; /* ✅ */
+  justify-content: center; /* ✅ */
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  z-index: 1;
+}
+
+.header::before {
+  content: ""; /* ✅ */
+  position: absolute; /* ✅ */
+  z-index: -1; /* ✅ */
+  height: 100%; /* ✅ */
+  width: 100vw; /* ✅ */
+  border-bottom: 0.1rem solid var(--color-input-border); /* ✅ */
+  background-color: var(--color-background);
+  /* top: 0rem; ✅ */
+  top: 0.1rem;
+}
+
+/* Navigation */
+.navigation {
+  transition: var(--transition-timing); /* for responsive screens */
+  background-color: var(--color-background); /* for responsive screens */
+}
+
+.navigation__list {
+  display: flex; /* ✅ */
+  gap: 2rem; /* ✅ */
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none; /* ✅ */
+  font-weight: var(--font-weight-medium); /* ✅ */
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline; /* ✅ */
+  color: var(--color-text); /* ✅ */
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+/* Toggle Component */
+.toggle {
+  display: flex; /* ✅ */
+  gap: 1rem; /* ✅ */
+  margin-left: auto; /* ✅ */
+}
+
+.toggle__title {
+  font-weight: var(--font-weight-medium); /* ✅ */
+  font-size: var(--font-size-18); /* ✅ */
+}
+
+.toggle__label {
+  display: block; /* ✅ */
+  position: relative; /* ✅ */
+  background-color: var(--color-black); /* ✅ */
+  padding: 0.3rem 0.4rem; /* ✅ */
+  border-radius: 1.5rem; /* ✅ */
+  width: 4.5rem; /* ✅ */
+  height: 2.2rem; /* ✅ */
+  cursor: pointer; /* ✅ */
+  transition: background-color 0.3s; /* ✅ */
+}
+
+.toggle__label::after {
+  content: ""; /* ✅ */
+  width: 1.6rem; /* ✅ */
+  height: 1.6rem; /* ✅ */
+  border-radius: 50%; /* ✅ */
+  display: block; /* ✅ */
+  background-color: var(--color-white); /* ✅ */
+  transition: 0.3s; /* ✅ */
+}
+
+.toggle__checkbox {
+  display: none; /* ✅ */
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background: var(--color-white); /* ✅ */
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+  transform: translateX(2.1rem); /* ✅ */
+  background: var(--color-green); /* ✅ */
+}
