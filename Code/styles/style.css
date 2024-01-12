@@ -175,7 +175,6 @@ body,
 .navigation__link:hover,
 .navigation__link:active {
   text-decoration: underline; /* ✅ */
-  color: var(--color-text); /* ✅ */
 }
 
 .burger-menu__checkbox {
@@ -502,7 +501,16 @@ html:has(.toggle__checkbox:checked) {
   --color-grey: #080808;
   --color-input-border: var(--color-white);
 }
-
+.container:has(.bio:target) .navigation__bio,
+.container:has(.skills:target) .navigation__skills,
+.container:has(.media:target) .navigation__media,
+.container:has(.projects:target) .navigation__projects,
+.container:has(.clients:target) .navigation__clients,
+.container:has(.contact:target) .navigation__contact {
+  color: var(--color-darker-blue); /* ✅ */
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
 @media (max-width: 1000px) {
   html {
     font-size: 8px;
