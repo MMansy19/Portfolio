@@ -1,38 +1,78 @@
 # Mahmoud Mansy Portfolio
 
-Welcome to my portfolio! I'm Mahmoud Mansy, a Full Stack Developer with a passion for innovation and problem-solving. This README file provides an overview of my portfolio, including sections on bio, skills, projects, media, clients, and contact information.
+Welcome to my personal website! This is a showcase of my skills, projects, and achievements.
+### [My Portfolio](https://main--mahmoud-mansy-portfolio.netlify.app/).
 
-## Bio
-Hi there! I'm Mahmoud Mansy, a Biomedical Engineering Student at [Cairo University](https://eng.cu.edu.eg/en/), and a Full Stack Developer. I bring a unique blend of technical expertise, problem-solving skills, and a passion for impactful projects. Connect with me on [GitHub](https://github.com/MMansy19) and [LinkedIn](https://www.linkedin.com/in/mahmoud-mansy-a189a5232/).
+## Table of Contents
 
-### [My Resume](./assets/myResume.pdf)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Skills
-### Programming Languages
-- Python & C++
-- Object-Oriented Programming (OOP) & Data Structures and Algorithms (DSA)
-- Problem Solving
+## Introduction
 
-### Web Technologies
-- HTML, CSS, JavaScript
-- Bootstrap, React, React Testing Library
-- Flask, Django
 
-### Database
-- SQL & ORM
+This is my personal portfolio website, where I present my skills, projects, and experiences. The website is live and can be accessed at [https://main--mahmoud-mansy-portfolio.netlify.app/](https://main--mahmoud-mansy-portfolio.netlify.app/)
 
-### Years of Experience
-- Python & C++: 3 years
-- HTML, CSS: 3 years
-- JavaScript: 2 years
-- Bootstrap, React: 2 years
-- React Testing Library, SQL & ORM, Flask, Django: 1 year
 
-## Clients
-What my clients say about working with me.
+## Features
 
-- "Mahmoud's Full Stack Development expertise significantly improved healthcare systems..."
-- "Collaborating with Mahmoud has been transformative. As a tech education advocate, I admire his dedication and proficiency..."
+- Responsive design for various devices.
+- Projects showcase with details.
+- Skillset and achievements display.
+- Clean and modern UI using HTML, CSS, Sass, Flexbox, and CSS Grid.
+
+## Technologies Used
+
+- HTML
+- CSS
+- Sass
+- Flexbox
+- CSS Grid
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-portfolio.git
+    ```
+
+2. Open the project folder:
+
+    ```bash
+    cd your-portfolio
+    ```
+
+3. Open `index.html` in your preferred web browser.
+
+## Usage
+
+Simply open the website using the provided link: [https://main--mahmoud-mansy-portfolio.netlify.app/](https://main--mahmoud-mansy-portfolio.netlify.app/)
+
+Explore the different sections to learn more about me, my skills, and the projects I have worked on.
+
+## Folder Structure
+
+- `/css`: Contains the CSS files.
+- `/sass`: Contains the Sass source files.
+- `/images`: Holds the images used in the portfolio.
+- `index.html`: The main HTML file.
+
+## Contributing
+
+If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Contributions are welcome!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
 
 ## Contact
 Feel free to reach out to me any time. I prefer to talk over email, especially since we may be in different time zones.
