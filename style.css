@@ -377,10 +377,7 @@ body {
     transform: translatey(-15%) scale(1.35);
   }
 }
-.media {
-  align-items: center;
-  justify-content: center;
-}
+
 .projects__main {
   -moz-column-gap: 7.4rem;
   column-gap: 7.4rem;
