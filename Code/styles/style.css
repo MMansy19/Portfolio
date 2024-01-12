@@ -335,9 +335,13 @@ body,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 5rem;
+  column-gap: 2rem;
 }
 
 .skills__column {
+  display: grid;
+  justify-items: center;
+
   transition: var(--transition-timing);
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -348,6 +352,9 @@ body,
 .skills__title {
   font-size: var(--font-size-38);
   font-weight: var(--font-weight-semi-bold);
+}
+.React-testing-library {
+  font-size: 3.5rem;
 }
 
 .skills__years {
@@ -363,7 +370,7 @@ body,
   -ms-user-select: none;
   user-select: none;
   background-color: var(--color-background);
-  z-index: 3;
+  width: 100%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -416,7 +423,7 @@ body,
 
 .media {
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .media__video {
