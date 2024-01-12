@@ -2,25 +2,10 @@
 
 Welcome to my portfolio! I'm Mahmoud Mansy, a Full Stack Developer with a passion for innovation and problem-solving. This README file provides an overview of my portfolio, including sections on bio, skills, projects, media, clients, and contact information.
 
-## Table of Contents
-1. [Bio](#bio)
-2. [Skills](#skills)
-3. [Media](#media)
-4. [Projects](#projects)
-5. [Clients](#clients)
-6. [Contact](#contact)
-
 ## Bio
-![Mahmoud Mansy](./images/personal-pic4.png)
-
 Hi there! I'm Mahmoud Mansy, a Biomedical Engineering Student at [Cairo University](https://eng.cu.edu.eg/en/), and a Full Stack Developer. I bring a unique blend of technical expertise, problem-solving skills, and a passion for impactful projects. Connect with me on [GitHub](https://github.com/MMansy19) and [LinkedIn](https://www.linkedin.com/in/mahmoud-mansy-a189a5232/).
 
-### Objectives
-- **Innovator:** Constantly exploring new technologies and approaches.
-- **Problem-solver:** Solving complex challenges with creative solutions.
-- **Contributor:** Passionate about contributing to impactful projects.
-
-[Say Hi](#contact) | [Download CV](./assets/myResume.pdf)
+### [My Resume](./assets/myResume.pdf)
 
 ## Skills
 ### Programming Languages
