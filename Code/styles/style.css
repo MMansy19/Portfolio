@@ -13,6 +13,7 @@
   --color-grey: #f6f6f6;
   --color-dark-green: #42959b;
   --color-background: var(--color-white);
+  --color-background-skills: var(#f8f8f8);
   --color-text: var(--color-black);
   --color-box-img: var(--color-black);
   --color-link-bg: var(--color-black);
@@ -361,7 +362,8 @@ body,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f8f8f8;
+  background-color: var(--color-background);
+  z-index: 3;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
