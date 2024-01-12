@@ -248,16 +248,20 @@ body,
 .bio__name {
   font-weight: var(--font-weight-semi-bold);
 }
-
-.bio__university {
+.bio__almdrasa {
   color: var(--color-green);
 }
-
-.bio__github {
-  color: var(--color-dark-red);
+.bio__facebook {
+  color: var(--color-blue);
+}
+.bio__twitter {
+  color: var(--color-light-blue);
 }
 .bio__linkedin {
   color: var(--color-dark-blue);
+}
+.bio__youtube {
+  color: var(--color-red);
 }
 .bio__links {
   font-size: 2.4rem;
@@ -318,7 +322,7 @@ body,
   position: absolute;
   background-color: var(--color-box-img);
   width: 100%;
-  height: 47rem;
+  height: 46rem;
   z-index: -1;
   border-radius: 1.8rem;
   box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
@@ -326,4 +330,268 @@ body,
 .bio__pic {
   width: 42.7rem;
 }
-/* End Bio  */
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5rem;
+}
+
+.skills__column {
+  transition: var(--transition-timing);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.skills__title {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.skills__years {
+  display: inline-block;
+  font-size: var(--font-size-20);
+  margin-top: 1rem;
+}
+
+.skills__column {
+  text-shadow: 0 0 6px transparent;
+  transition: text-shadow 0.5s ease;
+}
+.skills__column:hover {
+  text-shadow: 0 0 6px var(--color-green);
+}
+
+.skills__column:active {
+  text-shadow: 0 0 20px var(--color-green);
+}
+.duration {
+  font-size: var(--font-size-20);
+  margin-top: 1rem;
+}
+/* stars */
+.checked {
+  color: orange;
+}
+/* end stars */
+
+.media {
+  align-items: center;
+  justify-content: center;
+}
+
+.media__video {
+  max-width: 100%;
+}
+
+.projects__main {
+  -moz-column-gap: 7.4rem;
+  column-gap: 7.4rem;
+  row-gap: 7.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+.projects__img {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+.projects__data {
+  align-self: center;
+}
+.projects__description {
+  line-height: 1.5;
+}
+.projects__link {
+  color: var(--color-darker-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+  margin-top: 2.3rem;
+}
+.projects__link::after {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("./images/external-icon.png");
+  background-size: contain;
+  margin-left: 0.6rem;
+}
+
+.clients__opinions {
+  grid-column: 1/-1;
+  font-size: var(--font-size-40);
+  line-height: 1.7;
+}
+
+.clients__wrapper {
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+}
+
+.clients__opinion {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.contact {
+  -moz-column-gap: 20rem;
+  column-gap: 20rem;
+  row-gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contact__email {
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+.contact__social {
+  transition: var(--transition-timing);
+}
+.contact__social:hover {
+  transform: scale(1.2);
+}
+.contact__inputs {
+  display: flex;
+  gap: 3rem;
+}
+.contact__input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  flex: 1;
+}
+.contact__textarea {
+  width: 100%;
+  margin-top: 4rem;
+}
+.contact__button {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 1.7rem 1.8rem;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-24);
+  margin-top: 3.4rem;
+}
+.contact form:invalid::after {
+  content: "*";
+  font-size: var(--font-size-38);
+  color: var(--color-red);
+}
+
+.footer {
+  padding: 1rem 0;
+  font-size: var(--font-size-15);
+  border-top: 0.1rem solid var(--color-black);
+}
+
+html:has(.toggle__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-grey: #080808;
+  --color-input-border: var(--color-white);
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    row-gap: 8rem;
+  }
+  .section {
+    grid-template-columns: 1fr;
+  }
+  .bio__pic-content {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__main {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-items: center;
+  }
+  .projects__data:nth-of-type(2) {
+    order: 1;
+  }
+  .clients__opinions {
+    font-size: var(--font-size-24);
+  }
+  .contact {
+    row-gap: 6rem;
+  }
+  .contact__formContent {
+    order: -1;
+  }
+}
+@media (max-width: 500px) {
+  .bio__pic {
+    width: 100%;
+  }
+  .header {
+    padding: 0;
+  }
+  .header::before {
+    z-index: 0;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 0;
+    align-self: center;
+    cursor: pointer;
+  }
+  .burger-menu__bar {
+    height: 0.3rem;
+    width: 4.375rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+  .burger-menu__checkbox:checked + .navigation {
+    top: 100%;
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+  .navigation {
+    position: absolute;
+    padding: 3rem 0;
+    width: 100%;
+    top: 0;
+    border-bottom: 0.1rem solid var(--color-text);
+    z-index: -1;
+    width: 100vw;
+  }
+  .navigation__list {
+    justify-content: center;
+  }
+  .toggle {
+    padding: 3rem 0;
+    z-index: 1;
+  }
+} /*# sourceMappingURL=style.css.map */
