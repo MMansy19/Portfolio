@@ -1,443 +1,317 @@
+<!-- My Portfolio -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- Font Awesome Library -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&family=Work+Sans:wght@100;300;400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <title>👨‍💻 Mahmoud Mansy</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>👨‍💻 MANSY</title>
   </head>
-
   <body>
     <div class="container">
-      <audio autoplay>
-        <source src="1.mp3" type="audio/ogg" />
-      </audio>
-      <video class="video-loop" autoplay loop muted>
-        <source src="./video-loop.mp4" type="video/mp4" />
+      <video class="video__loop" autoplay loop muted>
+        <source src="video-loop.mp4" type="video/mp4" />
       </video>
 
+      <!-- Start Header -->
       <header class="header">
-        <label for="menu" class="burger-menu">
+        <label class="burger-menu" for="menu">
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
         </label>
-
         <input id="menu" class="burger-menu__checkbox" type="checkbox" />
-
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
-              <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
             </li>
             <li>
-              <a class="navigation__link navigation__skills" href="#skills"
+              <a href="#skills" class="navigation__link navigation__skills"
                 >Skills</a
               >
             </li>
+
+            <!-- <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li> -->
             <li>
-              <a class="navigation__link navigation__projects" href="#projects"
+              <a href="#projects" class="navigation__link navigation__projects"
                 >Projects</a
               >
             </li>
             <li>
-              <a class="navigation__link navigation__clients" href="#clients"
-                >My Clients</a
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My client</a
               >
             </li>
             <li>
-              <a class="navigation__link navigation__contact" href="#contact"
+              <a href="#contact" class="navigation__link navigation__contact"
                 >Contact</a
               >
             </li>
           </ul>
         </nav>
-
         <div class="toggle">
-          <h3 class="toggle__title">Switch Theme</h3>
-          <input id="toggle" class="toggle__checkbox" type="checkbox" />
-          <label class="toggle__label" for="toggle"></label>
+          <h3 class="toggle__title">Switch theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label
+            for="toggle"
+            class="toggle__label"
+            role="button"
+            tabindex="0"
+          ></label>
         </div>
       </header>
+      <!-- End Header -->
 
-      <section id="bio" class="section bio">
+      <!-- Start Bio -->
+      <section id="bio" class="bio section">
         <div class="bio__data">
-          <h1 class="bio__heading">Hi There, I’M A Full Stack Developer</h1>
+          <h1 class="bio__heading">
+            Hi There, I'm A Passionate Front-end Developer
+          </h1>
           <p class="bio__objective">
-            My name is <span class="bio__name">Mahmoud Mansy</span>, a
-            Biomedical Engineering Student at
-            <a class="bio__almdrasa" href="https://eng.cu.edu.eg/en/"
-              >Cairo University</a
-            >, Innovator, Problem-solver, Passionate Contributor to Impactful
-            Projects. Connect on
-
-            <a class="bio__twitter" href="https://github.com/MMansy19"
-              >GitHub
-            </a>
-            &
+            My name is <span class="bio__name">Mahmoud Mansy</span>, a Front-end
+            developer who struggle to reach top level in this industry. Find me
+            on
             <a
-              class="bio__linkedin"
+              href="https://github.com/MMansy19"
+              class="bio__github"
+              target="_blank"
+              >Github</a
+            >, and
+            <a
               href="https://www.linkedin.com/in/mahmoud-mansy-a189a5232/"
+              class="bio__linkedin"
+              target="_blank"
+              >Linkedin</a
             >
-              LinkedIn</a
-            >.
           </p>
-          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
-          <a class="bio__links find-out-link" href="./assets/myResume.pdf">
-            Download CV <span class="bio__arrow">↓</span>
-          </a>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a
+            href="./assets/myResume.pdf"
+            class="bio__links find-out-link"
+            target="_blank"
+            >Download cv <span class="bio__arrow">🠛</span></a
+          >
         </div>
         <div class="bio__pic-content">
           <img
             class="bio__pic"
-            src="./images/personal-pic4.png"
-            alt="personal pic of Mahmoud Mansy"
+            src="images/personal.pic.png"
+            alt="Image of Mahmoud Mansy"
+            loading="lazy"
           />
         </div>
       </section>
+      <!-- End Bio -->
 
+      <!-- Start Skills -->
       <section id="skills" class="skills section section--with-bg">
-        <h2 class="h2-heading">SKILLS</h2>
-        <ul class="skills__list">
-          <li class="skills__column">
-            <h2 class="skills__title">Python & C++</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">3 years</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">OOP & DSA</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">3 years</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">Problem Solving</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">3 years</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">HTML</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">3 years </span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">CSS</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">3 years </span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">JavaScript</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">2 years</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">Bootstrap</h2>
-
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">2 years</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">React</h2>
-
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">2 years</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title React-testing-library">
-              React testing library
-            </h2>
-
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">1 year</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">SQL & ORM</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">1 year</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">Flask</h2>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">1 year</span>
-          </li>
-
-          <li class="skills__column">
-            <h2 class="skills__title">Django</h2>
-
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <span class="skills__years">1 year</span>
-          </li>
-        </ul>
+        <h2 class="h2__heading">Skills</h2>
+        <div class="skills__filters">
+          <button
+            class="skills__button skills__button--isActive"
+            data-type="all"
+          >
+            All
+          </button>
+          <button class="skills__button" data-type="frontend">Frontend</button>
+          <button class="skills__button" data-type="backend">Backend</button>
+        </div>
       </section>
+      <!-- End Skills -->
 
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="h2-heading">
+      <!-- Start Media -->
+      <!-- <section id="media" class="media section">
+        <video class="media__video" poster="./images/thumbnail-1.jpg" controls>
+          <source src="./video.mp4" type="video/mp4" />
+          <source src="./video.mp4" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+      </section> -->
+      <!-- End Media -->
+
+      <!-- Start Projects -->
+      <section id="projects" class="projects section">
+        <h2 class="h2__heading">
           MY FEATURED <br />
-          PROJECTS
+          Projects
         </h2>
         <div class="projects__main">
-          <img
-            class="projects__img responsive-img"
-            src="./images/project-1.jpeg"
-            alt="Quran Tab Extension"
-          />
-          <div class="projects__data">
-            <h3 class="h3-heading">
-              MedScanSurg <br />
-              Connect 🌐
-            </h3>
-            <p class="projects__description">
-              MedScanSurg Connect streamlines and empowers patients, providing a
-              user-friendly portal for scheduling scans, radiology & surgery
-              appointments, and surgeries, fostering efficient healthcare access
-              and choices. This project is a Flask-based web application for
-              managing a Radiology & Surgery Department database. It allows
-              users to login as patients, doctors, or administrators, schedule
-              appointments, and manage user profiles.
-            </p>
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://drive.google.com/file/d/1XUMfUSOsbVn4jWmsddq0c2hgfBW1Q-fT/view?usp=sharing"
-              target="_blank"
-              >Demo Video</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://github.com/MMansy19/MedScanSurg-Hospital-Management-System"
-              target="_blank"
-              >GitHub Link</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://www.linkedin.com/posts/mahmoud-mansy-a189a5232_flask-postgresql-javascript-activity-7148705855813701633-M69Z?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >LinkedIn Post</a
-            >
+          <div class="project-one">
+            <img
+              class="projects__img"
+              src="images/project-1.jpeg"
+              alt="MedScanSurg"
+              loading="lazy"
+            />
+            <div class="projects__data">
+              <h3 class="h3__heading">
+                MedScanSurg <br />
+                Connect 🌐
+              </h3>
+              <p class="projects__description">
+                MedScanSurg Connect is a Flask-based web application that
+                simplifies healthcare processes. It offers a user-friendly
+                portal for patients, doctors, and administrators to schedule
+                scans, radiology, and surgery appointments efficiently. The
+                application manages a Radiology & Surgery Department database,
+                allowing users to log in, schedule appointments, and manage
+                profiles.
+              </p>
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://drive.google.com/file/d/1XUMfUSOsbVn4jWmsddq0c2hgfBW1Q-fT/view?usp=sharing"
+                target="_blank"
+                >Demo Video</a
+              >
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://github.com/MMansy19/MedScanSurg-Hospital-Management-System"
+                target="_blank"
+                >GitHub Link</a
+              >
+            </div>
           </div>
-          <div class="projects__data">
-            <h3 class="h3-heading">
-              👤 User Profile <br />
-              Management
-            </h3>
-            <p class="projects__description">
-              A comprehensive Flask web application showcasing user profile
-              management features, including registration, login, profile
-              editing, and image uploads. Implements user authentication,
-              database integration, and dynamic rendering with Flask and
-              Bootstrap. Ideal for learning Flask web development and best
-              practices.
-            </p>
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://drive.google.com/file/d/1hwISKuoGXkUZUnUkge7NuuITEzsCt7Sv/view"
-              target="_blank"
-              >Demo Video</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://github.com/MMansy19/Flask-User-Profile-Management/"
-              target="_blank"
-              >GitHub Link</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://www.linkedin.com/posts/mahmoud-mansy-a189a5232_flask-javascript-html-activity-7139838491483447296-aJz0?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >LinkedIn Post</a
-            >
-          </div>
-          <img
-            class="projects__img responsive-img"
-            src="./images/project-2.jpeg"
-            alt="Quran Tab Extension"
-          />
 
-          <img
-            class="projects__img responsive-img"
-            src="./images/project-3.1.jpeg"
-            alt="Quran Tab Extension"
-          />
-          <div class="projects__data">
-            <h3 class="h3-heading">
-              🎚️ Equalizer <br />
-              Web-Application
-            </h3>
-            <p class="projects__description">
-              The goal of this project is to develop a web application that
-              allows users to open a signal, manipulate the magnitude of
-              specific frequency components through sliders, and reconstruct the
-              modified signal. The application offers different working modes
-            </p>
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://clipchamp.com/watch/Mo0L2R7mFch"
-              target="_blank"
-              >Demo Video</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://github.com/MMansy19/Equalizer-Web-Application"
-              target="_blank"
-              >GitHub Link</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://www.linkedin.com/posts/mahmoud-mansy-a189a5232_signalmanipulation-webappinnovation-audioengineering-activity-7141103094737653761-eTx3?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >LinkedIn Post</a
-            >
+          <div class="project-two">
+            <div class="projects__data">
+              <h3 class="h3__heading">
+                👨‍💻 User Profile <br />
+                Management
+              </h3>
+              <p class="projects__description">
+                A comprehensive Flask web application showcasing user profile
+                management features, including registration, login, profile
+                editing, and image uploads. Implements user authentication,
+                database integration, and dynamic rendering with Flask and
+                Bootstrap. Ideal for learning Flask web development and best
+                practices.
+              </p>
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://drive.google.com/file/d/1hwISKuoGXkUZUnUkge7NuuITEzsCt7Sv/view"
+                target="_blank"
+                >Demo Video</a
+              >
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://github.com/MMansy19/Flask-User-Profile-Management/"
+                target="_blank"
+                >GitHub Link</a
+              >
+            </div>
+            <img
+              class="projects__img"
+              src="images/project-2.jpeg"
+              alt="Expenses-Tracker"
+              loading="lazy"
+            />
           </div>
-          <div class="projects__data">
-            <h3 class="h3-heading">
-              💼 Expenses-Tracker<br />
-              Desktop-App 💸
-            </h3>
-            <p class="projects__description">
-              Expenses Tracker App is a simple yet powerful tool to help you
-              keep track of your expenses. With a user-friendly interface, it
-              allows you to log your expenses in various currencies and provides
-              a real-time total in USD.
-            </p>
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://drive.google.com/file/d/1K4rk2ugNWGh5cNU8mT-bcdoqEypaeeH4/view"
-              target="_blank"
-              >Demo Video</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://github.com/MMansy19/Expenses-Tracker-App/"
-              target="_blank"
-              >GitHub Link</a
-            >
-            <span>-</span>
-            <a
-              class="projects__link"
-              href="https://www.linkedin.com/posts/mahmoud-mansy-a189a5232_expensetracker-python-ui-activity-7142638460816809985-wauw?utm_source=share&utm_medium=member_desktop"
-              target="_blank"
-              >LinkedIn Post</a
-            >
+
+          <div class="project-three">
+            <img
+              class="projects__img"
+              src="images/project-3.1.jpeg"
+              alt="Equalizer"
+            />
+            <div class="projects__data">
+              <h3 class="h3__heading">🎚️ Equalizer</h3>
+              <p class="projects__description">
+                The goal of this project is to develop a web application that
+                allows users to open a signal, manipulate the magnitude of
+                specific frequency components through sliders, and reconstruct
+                the modified signal. The application offers different working
+                modes
+              </p>
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://clipchamp.com/watch/Mo0L2R7mFch"
+                target="_blank"
+                >Demo Video</a
+              >
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://github.com/MMansy19/Equalizer-Web-Application"
+                target="_blank"
+                >GitHub Link</a
+              >
+            </div>
           </div>
-          <img
-            class="projects__img responsive-img"
-            src="./images/project-4.jpeg"
-            alt="Quran Tab Extension"
-          />
+
+          <div class="project-two">
+            <div class="projects__data">
+              <h3 class="h3__heading">💼 Expenses-Tracker</h3>
+              <p class="projects__description">
+                Expenses Tracker App is a simple yet powerful tool to help you
+                keep track of your expenses. With a user-friendly interface, it
+                allows you to log your expenses in various currencies and
+                provides a real-time total in USD.
+              </p>
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://drive.google.com/file/d/1K4rk2ugNWGh5cNU8mT-bcdoqEypaeeH4/view"
+                target="_blank"
+                >Demo Video</a
+              >
+              <span>-</span>
+              <a
+                class="projects__links"
+                href="https://github.com/MMansy19/Expenses-Tracker-App/"
+                target="_blank"
+                >GitHub Link</a
+              >
+            </div>
+            <img
+              class="projects__img"
+              src="images/project-4.jpeg"
+              alt="Expenses-Tracker"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
       <!-- End Projects -->
 
-      <section id="clients" class="section clients section--with-bg">
-        <h2 class="h2-heading">
+      <!-- Start My Clients -->
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2__heading">
           What My <br />
-          Clients Says.
+          Clients says
         </h2>
-        <!-- <div class="clients__arrows">
-        <img class="clients__arrow" src="./images/left-arrow.png" width="80" alt="left arrow">
-        <img class="clients__arrow" src="./images/right-arrow.png" width="80" alt="right arrow">
-      </div> -->
         <div class="clients__opinions">
           <div class="clients__wrapper">
-            <p class="clients__opinion">
+            <p class="clients_opinion">
               Mahmoud's Full Stack Development expertise significantly improved
               healthcare systems. His innovative approach streamlined processes
               in the Hospital-Management-System, enhancing healthcare
@@ -445,14 +319,14 @@
               translated complex requirements into scalable applications,
               positively impacting our organization.
             </p>
-            <p class="clients__opinion">
+            <p class="clients_opinion">
               Collaborating with Mahmoud has been transformative. As a tech
               education advocate, I admire his dedication and proficiency in
               ReactJS, JavaScript, and other technologies. Mahmoud's
               problem-solving skills and enthusiasm for new tech make him a
               valuable asset for any initiative.
             </p>
-            <p class="clients__opinion">
+            <p class="clients_opinion">
               Collaborating with Mahmoud has been transformative. As a tech
               education advocate, I admire his dedication and proficiency in
               ReactJS, JavaScript, and other technologies. Mahmoud's
@@ -462,91 +336,107 @@
           </div>
         </div>
       </section>
+      <!-- End My Clients -->
 
-      <section id="contact" class="section contact">
+      <!-- Start Contact -->
+      <section id="contact" class="contact section">
         <div>
           <p class="contact__description">
             Feel free to reach out to me any time. I prefer to talk over email,
             especially since we may be a few time zones away.
           </p>
-
-          <a href="mailto: example@gmail.com" class="contact__email"
+          <a class="contact__email" href="mailto:mahmoud2abdalfattah@gmail.com"
             >mahmoud2abdalfattah@gmail.com</a
           >
-
           <div class="contact__socials">
             <a
+              href="https://github.com/MMansy19"
               class="contact__social"
-              href="https://www.facebook.com/profile.php?id=100071365989272&sk=about"
+              target="_blank"
             >
-              <img src="./images/brand/facebook.svg" alt="facebook" />
+              <img
+                class="contact__img"
+                src="images/brand/github.svg"
+                alt="Icon of github"
+              />
             </a>
             <a
-              class="contact__social"
-              href="https://twitter.com/MahmoudAbd40537"
-            >
-              <img src="./images/brand/twitter.svg" alt="twitter" />
-            </a>
-            <a
-              class="contact__social"
-              href="https://www.youtube.com/channel/UCxZZc_wgU3DhInJ-A5Hjujg"
-            >
-              <img src="./images/brand/youtube.svg" alt="youtube" />
-            </a>
-            <a class="contact__social" href="https://github.com/MMansy19">
-              <img src="./images/brand/github.svg" alt="github" />
-            </a>
-            <a
-              class="contact__social"
-              href="https://www.instagram.com/mahmoudmohamedk8200949/?hl=en"
-            >
-              <img src="./images/brand/instagram.svg" alt="instagram.svg" />
-            </a>
-            <a
-              class="contact__social"
               href="https://www.linkedin.com/in/mahmoud-mansy-a189a5232/"
+              class="contact__social"
+              target="_blank"
             >
-              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+              <img
+                class="contact__img"
+                src="images/brand/LinkedIn.svg"
+                alt="Icon of linkedin"
+              />
             </a>
           </div>
         </div>
 
-        <div class="contact__formContent">
-          <h2 class="h2-heading">
-            Let’s Work <br />
-            Together!
+        <div class="contact__contactForm">
+          <h2 class="h2__heading">
+            Let's Work <br />
+            Together
           </h2>
-          <form action="results.html">
+          <form action="https://formspree.io/f/mvojpobz" method="POST">
             <div class="contact__inputs">
               <input
-                type="text"
                 class="contact__input"
-                name="name"
+                type="text"
+                name="fullName"
                 placeholder="Full Name"
                 required
               />
-              <!-- <input type="email" class="contact__input" placeholder="Email" required /> -->
               <input
-                type="tel"
                 class="contact__input"
+                type="tel"
+                name="telephone"
                 placeholder="Phone No."
-                name="tel"
-                required
               />
             </div>
+            <input
+              class="contact__input"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
             <textarea
               class="contact__input contact__textarea"
-              name="message"
-              placeholder="Your Message"
+              name="description"
+              id="description"
               rows="1"
+              placeholder="Your message ..."
               required
             ></textarea>
-            <input type="submit" class="contact__button" value="Send Message" />
+            <input class="contact__button" type="submit" value="Send Message" />
           </form>
         </div>
       </section>
+      <!-- End Contact -->
 
-      <footer class="footer">© 2024 by Mahmoud Mansy</footer>
+      <!-- Start Footer -->
+
+      <footer class="footer">
+        <p class="footer__author">© 1/2024 by Mahmoud Mansy</p>
+        <div class="footer__contact">
+          <div class="footer__contact-info">
+            <i class="fa-solid fa-earth-asia location"></i>
+            <p>Egypt</p>
+          </div>
+          <div class="footer__contact-info">
+            <i class="fa-solid fa-mobile-retro phone"></i>
+            <p>+201010352387</p>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
     </div>
+
+    <script src="scripts/preventDefault.js" type="module"></script>
+    <script src="scripts/skillsDynamically.js" type="module"></script>
+    <script src="scripts/utilis.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
   </body>
 </html>
