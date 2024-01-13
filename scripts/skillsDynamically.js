@@ -27,12 +27,6 @@ const skillsArray = [
     type: "",
   },
   {
-    name: "Problem Solving",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
-  {
     name: "HTML & CSS",
     experience: "2021",
     stars: "5",
@@ -45,7 +39,7 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "Responsive Design",
+    name: "Res. Design",
     experience: "2022",
     stars: "4",
     type: "frontend",
@@ -78,6 +72,12 @@ const skillsArray = [
     name: "SQL & ORM",
     experience: "2023",
     stars: "4",
+    type: "backend",
+  },
+  {
+    name: "Django",
+    experience: "2022",
+    stars: "3",
     type: "backend",
   },
 ];
