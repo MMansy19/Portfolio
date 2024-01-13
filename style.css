@@ -349,10 +349,10 @@ body {
   color: #777;
 }
 .skills__column:hover {
-  text-shadow: 0 0 2px var(--color-green);
+  text-shadow: 0 0 0.8rem var(--color-green);
 }
 .skills__column:active {
-  text-shadow: 0 0 6px var(--color-green);
+  text-shadow: 0 0 2rem var(--color-green);
 }
 .checked {
   color: orange;
@@ -363,10 +363,7 @@ body {
   padding: 2rem 1rem;
 }
 .stars:hover .checked {
-  text-shadow: 0 0 2px orange;
-}
-.checked:hover {
-  text-shadow: 0 0 10px orange;
+  text-shadow: 0 0 0.3rem orange;
 }
 @keyframes jump-2 {
   0%,
