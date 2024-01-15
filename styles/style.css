@@ -522,7 +522,7 @@ form {
   width: 2rem;
   padding: 0.1rem;
   margin-right: 0.3rem;
-  background-color: var(--color-green);
+  /* background-color: var(--color-green); */
 }
 .contact__inputs {
   display: flex;
