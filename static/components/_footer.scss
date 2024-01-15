@@ -1,0 +1,29 @@
+.footer {
+  position: relative;
+  padding: .8rem;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  border-top:  1px solid var(--color-box-img);
+}
+
+.footer__author {
+  margin: .5rem 0 1.5rem;
+}
+
+.footer__contact {
+  width: 10rem;
+  margin: auto;
+}
+
+.footer__contact-info {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin-bottom: .4rem;
+}
+
+.location,
+.phone {
+  width: 1rem;
+}

@@ -1,0 +1,108 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background);
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  border-bottom: .1rem solid var(--color-input-border);
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  background-color: var(--color-background);
+  z-index: -1;
+}
+
+/* Start Nav */
+
+.navigation {
+  transition: var(--transition-timing);
+}
+
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-blue);
+}
+
+.container:has(.bio:target) .navigation__bio,
+.container:has(.skills:target) .navigation__skills,
+.container:has(.media:target) .navigation__media,
+.container:has(.projects:target) .navigation__projects,
+.container:has(.clients:target) .navigation__clients,
+.container:has(.contact:target) .navigation__contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+/* End Nav */
+
+/* Start toggle */
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.toggle__title {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-15);
+}
+
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__label {
+  position: relative;
+  display: block;
+  background-color: var(--color-black);
+  border-radius: 4.5rem;
+  width: 2.7rem;
+  height: 1.5rem;
+  padding: .3rem .4rem;
+  cursor: pointer;
+  transition: var(--transition-timing);
+}
+
+.toggle__label::before {
+  content: "";
+  position: absolute;
+  width: .9rem;
+  height: .9rem;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  transition: var(--transition-timing);
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+
+.toggle__checkbox:checked + .toggle__label::before {
+  transform: translateX(1.1rem);
+  background-color: var(--color-green);
+}
