@@ -9,12 +9,6 @@ const generateStars = (starCount) => {
 // Add Skill Dynamically
 const skillsArray = [
   {
-    name: "Python",
-    experience: "2021",
-    stars: "5",
-    type: "backend",
-  },
-  {
     name: "C++",
     experience: "2021",
     stars: "5",
@@ -27,40 +21,16 @@ const skillsArray = [
     type: "",
   },
   {
-    name: "HTML",
+    name: "OOP",
     experience: "2021",
     stars: "5",
-    type: "frontend",
+    type: "",
   },
   {
-    name: "CSS",
+    name: "Python",
     experience: "2021",
     stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "SASS",
-    experience: "2022",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "Res. Design",
-    experience: "2022",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "Javascript",
-    experience: "2022",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "React",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
+    type: "backend",
   },
   {
     name: "Flask",
@@ -73,6 +43,42 @@ const skillsArray = [
     experience: "2023",
     stars: "4",
     type: "backend",
+  },
+  {
+    name: "HTML",
+    experience: "2022",
+    stars: "5",
+    type: "frontend",
+  },
+  {
+    name: "CSS",
+    experience: "2022",
+    stars: "5",
+    type: "frontend",
+  },
+  {
+    name: "SASS",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Res. Design",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Javascript",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "React",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
   },
 ];
 
