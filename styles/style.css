@@ -16,6 +16,16 @@
   --color-box-img: var(--color-black);
   --color-link-bg: var(--color-black);
   --color-input-border: var(--color-black);
+  --color-soft-blue: #5368df;
+  --color-soft-red: #fa5757;
+  --color-grayish-blue: #9194a1;
+  --color-very-dark-blue: #252b46;
+  --color-off-white: #f7f7f7;
+  --default-padding: 2rem;
+  --default-radius: 0.4rem;
+  --desktop-width: 900px;
+  --tablet-width: 600px;
+  --timing-animation: 0.2s;
   --font-family-raleway: "Raleway", sans-serif;
   --font-family-poppins: "Poppins", sans-serif;
   --font-weight-regular: 400;
@@ -79,7 +89,10 @@ body {
   align-items: start;
   opacity: 0;
   transform: translateY(1rem);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.projects {
+  opacity: 1;
 }
 .section.in-view {
   opacity: 1;
@@ -114,6 +127,7 @@ body {
   font-size: var(--font-size-28);
   font-weight: var(--font-weight-bold);
   margin-bottom: 2rem;
+  text-align: left;
 }
 a {
   display: inline-block;
@@ -260,6 +274,12 @@ ol {
   padding: 0.4rem 1.8rem;
   border-radius: 0.5rem;
 }
+.say-hi-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.button {
+}
 .find-out-link {
   padding: 0.4rem 0;
   margin-inline-start: 1.4rem;
@@ -304,6 +324,15 @@ ol {
     transform: translatey(-5%);
   }
 }
+@keyframes jump-4 {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10%) scale(1);
+  }
+}
 .bio__pic-content {
   display: flex;
   position: relative;
@@ -314,7 +343,7 @@ ol {
   padding: 1rem;
 }
 .bio__pic-content:active {
-  animation: 0.5s infinite alternate jump-3;
+  animation: 3s infinite alternate jump-4;
   padding-top: 3rem;
   transition: 0.5s;
 }
@@ -375,7 +404,7 @@ ol {
   padding: 1rem 3rem;
 }
 .skills__item:active {
-  animation: 0.5s infinite alternate jump-3;
+  animation: 2s infinite alternate jump-4;
 }
 .skill-active {
   width: 100%;
@@ -444,39 +473,55 @@ ol {
   row-gap: 7.5rem;
 }
 .project-one,
-.project-two,
-.project-three {
+.project-two {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   -moz-column-gap: 7.5rem;
   column-gap: 7.5rem;
 }
 .projects__img {
+  box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 1);
+  border-radius: 1.5rem;
+  animation: jump-4 6s infinite alternate ease-in-out;
+  transition: transform 0.3s ease-in-out;
   max-width: 100%;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
 }
 .projects__data {
   align-self: center;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.project-two:hover,
+.project-one:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease-in-out;
 }
 .projects__description {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
   line-height: 1.8;
+  text-align: left;
 }
+
 .projects__links {
-  color: var(--color-dark-blue);
-  font-family: var(--font-family-poppins);
-  font-weight: var(--font-weight-medium);
   margin-top: 1.3rem;
   margin-right: 1rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: var(--default-radius);
+  background-color: var(--color-soft-blue);
+  color: var(--color-off-white);
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all var(--timing-animation) ease-in-out;
+  box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
-.projects__links::after {
-  content: "";
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background-image: url(../images/external-icon.png);
-  background-size: contain;
-  margin-left: 0.4rem;
-}
+
 .clients__opinions {
   grid-column: 1/-1;
   line-height: 1.8;
@@ -513,6 +558,8 @@ form {
 }
 .contact__social {
   transition: var(--transition-timing);
+  width: 2rem;
+  animation: jump-4 1s infinite alternate ease-in-out;
 }
 .contact__social:hover {
   transform: scale(1.2);
@@ -524,6 +571,7 @@ form {
   margin-right: 0.3rem;
   max-width: 2rem;
 }
+
 .contact__inputs {
   display: flex;
   gap: 2rem;
@@ -614,10 +662,10 @@ html:has(.toggle__checkbox:checked) {
     justify-items: center;
   }
   .project-one,
-  .project-two,
-  .project-three {
+  .project-two {
     grid-template-columns: 1fr;
   }
+
   .projects__data {
     margin-top: 3rem;
     margin-bottom: 5rem;
