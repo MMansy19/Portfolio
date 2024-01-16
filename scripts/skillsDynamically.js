@@ -21,13 +21,19 @@ const skillsArray = [
     type: "",
   },
   {
-    name: "DSA & OOP",
+    name: "DSA",
     experience: "2021",
     stars: "5",
     type: "",
   },
   {
-    name: "HTML & CSS",
+    name: "HTML",
+    experience: "2021",
+    stars: "5",
+    type: "frontend",
+  },
+  {
+    name: "CSS",
     experience: "2021",
     stars: "5",
     type: "frontend",
@@ -51,12 +57,6 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "Bootstrap",
-    experience: "2022",
-    stars: "4",
-    type: "frontend",
-  },
-  {
     name: "React",
     experience: "2023",
     stars: "3",
@@ -72,12 +72,6 @@ const skillsArray = [
     name: "SQL & ORM",
     experience: "2023",
     stars: "4",
-    type: "backend",
-  },
-  {
-    name: "Django",
-    experience: "2022",
-    stars: "3",
     type: "backend",
   },
 ];
