@@ -341,6 +341,7 @@ ol {
 }
 .bio__pic-content:hover {
   padding: 1rem;
+  transition: 1s;
 }
 .bio__pic-content:active {
   animation: 3s infinite alternate jump-4;
