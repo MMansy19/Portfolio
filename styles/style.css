@@ -403,6 +403,7 @@ ol {
   text-shadow: 0 0 0.2rem var(--color-green);
   width: 100%;
   padding: 1rem 3rem;
+  transition: 1s;
 }
 .skills__item:active {
   animation: 2s infinite alternate jump-4;
