@@ -11,17 +11,26 @@ The website was designed with responsiveness in mind, so it looks great on all d
 
 The following technologies were utilized in this project:
 
+### Frontend
+
 •  HTML
 
-•  CSS (BEM)
-
-•  Flexbox
-
-•  CSS Grid
+•  CSS
 
 •  SASS
 
+•  Responsive Web Design
+
 •  JavaScript
+
+### Backend
+
+•  Python
+
+•  Flask
+
+•  PostgreSQL
+
 
 ## Features
 
