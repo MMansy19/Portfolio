@@ -561,8 +561,9 @@ form {
 }
 .contact__social {
   transition: var(--transition-timing);
-  width: 2rem;
+  width: 2.5rem;
   animation: jump-4 1s infinite alternate ease-in-out;
+  padding: 0 0.2rem;
 }
 .contact__social:hover {
   transform: scale(1.2);
