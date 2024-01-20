@@ -147,7 +147,7 @@ ol {
   list-style: none;
 }
 .header {
-  position: ;
+  position: sticky;
   top: 0;
   padding: 1.5rem 0;
   display: flex;
