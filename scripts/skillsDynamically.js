@@ -57,9 +57,15 @@ const skillsArray = [
     type: "frontend",
   },
   {
+    name: "Tailwind CSS",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
     name: "SASS",
     experience: "2023",
-    stars: "4",
+    stars: "3",
     type: "frontend",
   },
   {
