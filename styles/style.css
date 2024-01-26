@@ -9,6 +9,11 @@
   --color-darker-blue: #143ce8;
   --color-red: #ff0000;
   --color-green: #03a696;
+  --color-green-gradient: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
   --color-grey: #f6f6f6;
   --color-dark-green: #42959b;
   --color-background: var(--color-white);
@@ -278,8 +283,7 @@ ol {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
-.button {
-}
+
 .find-out-link {
   padding: 0.4rem 0;
   margin-inline-start: 1.4rem;
@@ -398,7 +402,6 @@ ol {
   text-shadow: 0 0 0.6rem transparent;
   transition: text-shadow 0.5s;
 }
-
 .skills__item:hover {
   text-shadow: 0 0 0.2rem var(--color-green);
   width: 100%;
@@ -410,7 +413,7 @@ ol {
 }
 .skill-active {
   width: 100%;
-  background-color: var(--color-green);
+  background: var(--color-green-gradient);
   border-radius: 1rem;
   transition: 1s;
 }
@@ -469,6 +472,13 @@ ol {
   max-width: 80%;
   margin: auto;
 }
+.project-active {
+  width: 100%;
+  padding: 1rem 3rem;
+  transition: 1s;
+  background: var(--color-green-gradient);
+  border-radius: 2rem;
+}
 .projects__main {
   display: flex;
   flex-direction: column;
@@ -480,6 +490,10 @@ ol {
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 7.5rem;
   column-gap: 7.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: var(--transition-timing);
 }
 .projects__img {
   border-radius: 1.5rem;
@@ -639,9 +653,12 @@ html:has(.toggle__checkbox:checked) {
   --color-grey: #080808;
   --color-input-border: var(--color-white);
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   html {
     font-size: 8px;
+  }
+  .project-active {
+    padding: 1rem 1rem;
   }
 }
 @media (max-width: 800px) {
@@ -684,6 +701,11 @@ html:has(.toggle__checkbox:checked) {
   }
   .contact__contactForm {
     order: -1;
+  }
+  .project-active {
+    width: 100%;
+    padding: 3rem 3rem;
+    font-size: 120%;
   }
 }
 @media (max-width: 500px) {
