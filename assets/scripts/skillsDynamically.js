@@ -21,6 +21,12 @@ const skillsArray = [
     type: "",
   },
   {
+    name: "Prob. Solving",
+    experience: "2021",
+    stars: "5",
+    type: "",
+  },
+  {
     name: "OOP",
     experience: "2021",
     stars: "5",
@@ -35,25 +41,31 @@ const skillsArray = [
   {
     name: "Flask",
     experience: "2023",
-    stars: "4",
+    stars: "3",
     type: "backend",
   },
   {
-    name: "SQL & ORM",
+    name: "PostgreSQL",
     experience: "2023",
-    stars: "4",
+    stars: "3",
     type: "backend",
   },
   {
     name: "HTML",
-    experience: "2022",
+    experience: "2021",
     stars: "5",
     type: "frontend",
   },
   {
     name: "CSS",
-    experience: "2022",
+    experience: "2021",
     stars: "5",
+    type: "frontend",
+  },
+    {
+    name: "Javascript",
+    experience: "2022",
+    stars: "4",
     type: "frontend",
   },
   {
@@ -74,8 +86,9 @@ const skillsArray = [
     stars: "4",
     type: "frontend",
   },
+
   {
-    name: "Javascript",
+    name: "Eslint",
     experience: "2023",
     stars: "3",
     type: "frontend",
