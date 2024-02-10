@@ -247,7 +247,7 @@ ol {
   row-gap: 0;
 }
 .bio__heading {
-  font-size: var(--font-size-48);
+  font-size: var(--font-size-32);
   font-weight: var(--font-weight-bold);
 }
 .bio__objective {
