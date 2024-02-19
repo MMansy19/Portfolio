@@ -14,3 +14,4 @@ export const observeElements = (sectionElements) => {
 
   sectionElements.forEach((element) => observer.observe(element))
 }
+

@@ -96,9 +96,6 @@ body {
   transform: translateY(1rem);
   transition: all 1s ease-in-out;
 }
-.projects {
-  opacity: 1;
-}
 .section.in-view {
   opacity: 1;
   transform: translateY(0);
@@ -109,6 +106,64 @@ body {
 :not(.section--one-column) .section.in-view > div:nth-of-type(2) {
   transform: translateX(0rem);
 }
+/* Projects */
+.projects {
+  opacity: 1;
+}
+/* Projects Observation  */
+.project-one {
+  opacity: 0;
+  transition: all calc(var(--timing-animation) * 4) ease-in-out;
+
+  .projects__data {
+    transform: translateX(-10rem);
+    transition: calc(var(--timing-animation) * 4);
+  }
+  .projects__img {
+    transform: translateX(10rem);
+    transition: calc(var(--timing-animation) * 4);
+  }
+}
+
+.project-one.in-view {
+  opacity: 1;
+  transition: all 2s; /* Adjusting the transition property */
+
+  .projects__img,
+  .projects__data {
+    transform: translateX(0);
+    transition: all 2s; /* Adjusting the transition property */
+  }
+}
+.project-two {
+  opacity: 0;
+  transition: all calc(var(--timing-animation) * 4) ease-in-out;
+
+  .projects__data {
+    transform: translateX(10rem);
+    transition: calc(var(--timing-animation) * 4);
+  }
+  .projects__img {
+    transform: translateX(-10rem);
+    transition: calc(var(--timing-animation) * 4);
+  }
+}
+
+.project-two.in-view {
+  opacity: 1;
+  transition: all 2s; /* Adjusting the transition property */
+
+  .projects__img,
+  .projects__data {
+    transform: translateX(0);
+    transition: all 2s; /* Adjusting the transition property */
+  }
+}
+
+/* // End Projects Observation  */
+
+/* // Projects */
+
 .section--with-bg {
   padding: 5rem 0;
 }
@@ -319,15 +374,6 @@ ol {
     transform: translatey(-15%) scale(1.35);
   }
 }
-@keyframes jump-3 {
-  0%,
-  50% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(-5%);
-  }
-}
 @keyframes jump-4 {
   0%,
   100% {
@@ -497,8 +543,6 @@ ol {
 }
 .projects__img {
   border-radius: 1.5rem;
-  animation: jump-4 6s infinite alternate ease-in-out;
-  transition: transform 0.3s ease-in-out;
   max-width: 100%;
   box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3);
 }

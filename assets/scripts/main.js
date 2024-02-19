@@ -6,24 +6,15 @@ bioPic.style.width = '26rem'
 
 //=========================================
 //---
-// Add Skill Underline
-/* eslint-disable */
-//const skillsList = document.querySelectorAll('.skills__list');
-//const cbFunction = (skillItem) => {
-//  const activeElement = document.querySelector('.underline');
-//
-//    if (activeElement) {
-//      activeElement.classList.remove('underline');
-//    }
-//
-//    skillItem.classList.add('underline');
-//  };
-//
-//skillsList.forEach((skillItem) => {
-//  skillItem.addEventListener('click', () => cbFunction(skillItem));
-//});
-
 // ObserveInterSections API 
 const sectionElements = document.querySelectorAll('section');
 
 observeElements(sectionElements);
+
+//=========================================
+//---
+// Select all elements with the class 'project-section'
+const projectSections = document.querySelectorAll('.project-one, .project-two');
+
+// Call observeElements function passing the array of projectSections
+observeElements(projectSections);
