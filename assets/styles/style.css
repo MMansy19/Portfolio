@@ -113,20 +113,31 @@ body {
 /* Projects Observation  */
 .project-one {
   opacity: 0;
+  /* transform: translateY(10rem); */
   transition: all calc(var(--timing-animation) * 4) ease-in-out;
 
-  .projects__data {
-    transform: translateX(-10rem);
-    transition: calc(var(--timing-animation) * 4);
+  @media (min-width: 767px) {
+    .projects__data {
+      transform: translateX(-10rem);
+      transition: calc(var(--timing-animation) * 4);
+    }
+    .projects__img {
+      transform: translateX(10rem);
+      transition: calc(var(--timing-animation) * 4);
+    }
   }
-  .projects__img {
-    transform: translateX(10rem);
-    transition: calc(var(--timing-animation) * 4);
+  @media (max-width: 767px) {
+    .projects__img,
+    .projects__data {
+      transform: translateY(10rem);
+      transition: calc(var(--timing-animation) * 4);
+    }
   }
 }
 
 .project-one.in-view {
   opacity: 1;
+  /* transform: translateY(0); */
   transition: all 2s; /* Adjusting the transition property */
 
   .projects__img,
@@ -137,25 +148,36 @@ body {
 }
 .project-two {
   opacity: 0;
+  /* transform: translateY(10rem); */
   transition: all calc(var(--timing-animation) * 4) ease-in-out;
 
-  .projects__data {
-    transform: translateX(10rem);
-    transition: calc(var(--timing-animation) * 4);
+  @media (min-width: 767px) {
+    .projects__img {
+      transform: translateX(-10rem);
+      transition: calc(var(--timing-animation) * 4);
+    }
+    .projects__data {
+      transform: translateX(10rem);
+      transition: calc(var(--timing-animation) * 4);
+    }
   }
-  .projects__img {
-    transform: translateX(-10rem);
-    transition: calc(var(--timing-animation) * 4);
+  @media (max-width: 767px) {
+    .projects__img,
+    .projects__data {
+      transform: translateY(10rem);
+      transition: calc(var(--timing-animation) * 4);
+    }
   }
 }
 
 .project-two.in-view {
   opacity: 1;
+  /* transform: translateY(0); */
   transition: all 2s; /* Adjusting the transition property */
 
   .projects__img,
   .projects__data {
-    transform: translateX(0);
+    transform: translateY(0);
     transition: all 2s; /* Adjusting the transition property */
   }
 }
