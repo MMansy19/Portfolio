@@ -51,6 +51,12 @@ const skillsArray = [
     type: "backend",
   },
   {
+    name: "Node.js",
+    experience: "2023",
+    stars: "3",
+    type: "backend",
+  },
+  {
     name: "HTML",
     experience: "2021",
     stars: "5",
@@ -62,10 +68,16 @@ const skillsArray = [
     stars: "5",
     type: "frontend",
   },
-    {
-    name: "Javascript",
+  {
+    name: "Animation",
     experience: "2022",
-    stars: "4",
+    stars: "5",
+    type: "frontend",
+  },
+  {
+    name: "SASS",
+    experience: "2022",
+    stars: "5",
     type: "frontend",
   },
   {
@@ -74,8 +86,14 @@ const skillsArray = [
     stars: "3",
     type: "frontend",
   },
-  {
-    name: "SASS",
+    {
+    name: "JavaScript",
+    experience: "2022",
+    stars: "4",
+    type: "frontend",
+  },
+    {
+    name: "TypeScript",
     experience: "2023",
     stars: "3",
     type: "frontend",
@@ -83,14 +101,7 @@ const skillsArray = [
   {
     name: "Res. Design",
     experience: "2023",
-    stars: "4",
-    type: "frontend",
-  },
-
-  {
-    name: "Eslint",
-    experience: "2023",
-    stars: "3",
+    stars: "5",
     type: "frontend",
   },
   {
