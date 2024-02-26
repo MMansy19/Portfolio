@@ -71,13 +71,13 @@ const skillsArray = [
   {
     name: "Animation",
     experience: "2022",
-    stars: "5",
+    stars: "4",
     type: "frontend",
   },
   {
     name: "SASS",
     experience: "2022",
-    stars: "5",
+    stars: "4",
     type: "frontend",
   },
   {
@@ -100,7 +100,7 @@ const skillsArray = [
   },
   {
     name: "Res. Design",
-    experience: "2023",
+    experience: "2022",
     stars: "5",
     type: "frontend",
   },
