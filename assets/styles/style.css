@@ -647,6 +647,18 @@ form {
   animation: jump-4 1s infinite alternate ease-in-out;
   padding: 0 0.2rem;
 }
+.openai {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .contact__social:hover {
   transform: scale(1.2);
 }

@@ -105,7 +105,7 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "React",
+    name: "React.js",
     experience: "2023",
     stars: "3",
     type: "frontend",
