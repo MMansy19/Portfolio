@@ -11,8 +11,8 @@
   --color-green: #03a696;
   --color-green-gradient: linear-gradient(
     0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
+    rgba(34, 192, 195, 0.808) 0%,
+    rgba(253, 187, 45, 0.818) 100%
   );
   --color-grey: #f6f6f6;
   --color-dark-green: #42959b;

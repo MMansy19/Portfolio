@@ -9,53 +9,30 @@ const generateStars = (starCount) => {
 // Add Skill Dynamically
 const skillsArray = [
   {
-    name: "C++",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
-  {
-    name: "DSA",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
-  {
-    name: "Prob. Solving",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
-  {
-    name: "OOP",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
-  {
-    name: "Python",
-    experience: "2021",
-    stars: "5",
-    type: "backend",
-  },
-  {
-    name: "Flask",
+    name: "Linux",
     experience: "2023",
     stars: "3",
-    type: "backend",
+    type: "",
   },
   {
-    name: "PostgreSQL",
+    name: "REST API",
     experience: "2023",
     stars: "3",
-    type: "backend",
+    type: "",
   },
   {
-    name: "Node.js",
-    experience: "2023",
-    stars: "3",
-    type: "backend",
+    name: "Git",
+    experience: "2021",
+    stars: "5",
+    type: "",
   },
+  {
+    name: "GitHub",
+    experience: "2021",
+    stars: "5",
+    type: "",
+  },
+
   {
     name: "HTML",
     experience: "2021",
@@ -69,13 +46,7 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "Animation",
-    experience: "2022",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "SASS",
+    name: "Sass",
     experience: "2022",
     stars: "4",
     type: "frontend",
@@ -99,17 +70,50 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "Res. Design",
-    experience: "2022",
-    stars: "5",
-    type: "frontend",
-  },
-  {
     name: "React.js",
     experience: "2023",
     stars: "3",
     type: "frontend",
   },
+  {
+    name: "Next.js",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+
+
+  {
+    name: "Python",
+    experience: "2021",
+    stars: "5",
+    type: "backend",
+  },
+  {
+    name: "Flask",
+    experience: "2023",
+    stars: "3",
+    type: "backend",
+  },
+  {
+    name: "PostgreSQL",
+    experience: "2023",
+    stars: "3",
+    type: "backend",
+  },
+  {
+    name: "MongoDB",
+    experience: "2023",
+    stars: "3",
+    type: "backend",
+  },
+  {
+    name: "Node.js",
+    experience: "2023",
+    stars: "3",
+    type: "backend",
+  },
+
 ];
 
 const skillsElement = document.querySelector("#skills");
