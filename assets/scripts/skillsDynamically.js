@@ -21,18 +21,12 @@ const skillsArray = [
     type: "",
   },
   {
-    name: "Git",
+    name: "Git & GitHub",
     experience: "2021",
     stars: "5",
     type: "",
   },
-  {
-    name: "GitHub",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
-
+  // Frontend Skills
   {
     name: "HTML",
     experience: "2021",
@@ -57,13 +51,19 @@ const skillsArray = [
     stars: "3",
     type: "frontend",
   },
-    {
+  {
+    name: "Figma",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
     name: "JavaScript",
     experience: "2022",
     stars: "4",
     type: "frontend",
   },
-    {
+  {
     name: "TypeScript",
     experience: "2023",
     stars: "3",
@@ -81,8 +81,7 @@ const skillsArray = [
     stars: "3",
     type: "frontend",
   },
-
-
+  // Backend Skills
   {
     name: "Python",
     experience: "2021",
@@ -91,12 +90,12 @@ const skillsArray = [
   },
   {
     name: "Flask",
-    experience: "2023",
+    experience: "2022",
     stars: "3",
     type: "backend",
   },
   {
-    name: "PostgreSQL",
+    name: "Firebase",
     experience: "2023",
     stars: "3",
     type: "backend",
@@ -108,12 +107,17 @@ const skillsArray = [
     type: "backend",
   },
   {
-    name: "Node.js",
-    experience: "2023",
+    name: "PostgreSQL",
+    experience: "2022",
     stars: "3",
     type: "backend",
   },
-
+  {
+    name: "Node.js",
+    experience: "2022",
+    stars: "3",
+    type: "backend",
+  },
 ];
 
 const skillsElement = document.querySelector("#skills");
@@ -156,8 +160,6 @@ skillsItems.forEach((item) => {
     item.classList.toggle("skill-active");
   });
 });
-
-
 
 // Add Filter Buttons
 document.querySelectorAll(".skills__button").forEach((element) => {
