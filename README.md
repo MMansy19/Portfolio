@@ -1,5 +1,5 @@
 # My Portfolio
-## [🌟Live Website🌟](https://mahmoud-mansy-portfolio.netlify.app/)
+## [🌟Live Demo 🌟](https://mahmoud-mansy-portfolio.netlify.app/)
 This is a project that I completed as part of [Almdrasa.com](https://almdrasa.com/)
  coding challenge. The main goal of the project was to create a responsive website using HTML, CSS (BEM), Flexbox, CSS grid, SASS and JavaScript.
 
@@ -50,7 +50,7 @@ To view the website, simply open the `index.html` file in your web browser. The 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-portfolio.git
+    git clone https://github.com/MMansy19/Portfolio.git
     ```
 
 2. Open the project folder:
@@ -79,4 +79,4 @@ Feel free to reach out to me any time. I prefer to talk over email, especially s
 - [LinkedIn](https://www.linkedin.com/in/mahmoud-mansy-a189a5232/)
 
 ## Author
-[Mahmoud Mansy] (https://github.com/MMansy19)
+[Mahmoud Mansy](https://github.com/MMansy19)
