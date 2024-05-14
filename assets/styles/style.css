@@ -323,15 +323,20 @@ ol {
   column-gap: 7.5rem;
   row-gap: 0;
 }
+.bio__data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .bio__heading {
   font-size: var(--font-size-32);
   font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
 }
 .bio__objective {
   font-size: var(--font-size-14);
   font-family: var(--font-family-poppins);
   font-weight: var(--font-weight-regular);
-  margin: 2.4rem 0 2.7rem;
 }
 .bio__name {
   font-weight: var(--font-weight-semi-bold);
@@ -367,11 +372,14 @@ ol {
 }
 .say-hi-link:hover,
 .find-out-link:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .bio__arrow {
   display: inline-block;
   animation: jump 1s infinite alternate ease-in-out;
+}
+.bio__bottom {
+  margin-top: 1rem;
 }
 @keyframes jump {
   0% {
@@ -411,15 +419,6 @@ ol {
   align-items: flex-end;
   justify-self: end;
 }
-.bio__pic-content:hover {
-  padding: 1rem;
-  transition: 1s;
-}
-.bio__pic-content:active {
-  animation: 3s infinite alternate jump-4;
-  padding-top: 3rem;
-  transition: 0.5s;
-}
 .bio__pic-content::before {
   content: "";
   position: absolute;
@@ -434,19 +433,8 @@ ol {
 }
 .bio__pic {
   width: 28rem;
-  border-radius: 1rem;
-
-  /* Make it circular */
-  /* Maintain aspect ratio and cover the entire container */
-  /* Add box shadow to the circular image */
-  /***  
-  height: 28rem; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.3); 
-
-  ***/
 }
+
 #skills {
   grid-template-columns: 1fr;
 }
@@ -605,7 +593,51 @@ ol {
   box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3);
   text-align: center;
 }
+.projects__all {
+  font-weight: 800;
+  margin: 1rem auto;
+}
+.btn {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: 1.2rem 5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 0.6rem transparent;
+}
 
+.btn:hover {
+  color: var(--color-background);
+  background-color: var(--color-text);
+}
+
+/* Full width button */
+.btn.full-width {
+  display: block;
+  width: 100%;
+}
+
+/* Add animation */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn:hover {
+  animation: scale 0.5s ease;
+}
+/*  */
 .clients__opinions {
   grid-column: 1/-1;
   line-height: 1.8;
