@@ -874,4 +874,13 @@ html:has(.toggle__checkbox:checked) {
     padding: 1.5rem 0;
     z-index: 1;
   }
+
+  .projects__description {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .h3__heading {
+    text-align: center;
+    padding: 0 1rem;
+  }
 } /*# sourceMappingURL=style.css.map */
