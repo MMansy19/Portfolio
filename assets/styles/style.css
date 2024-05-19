@@ -377,6 +377,9 @@ ol {
 .bio__arrow {
   display: inline-block;
   animation: jump 1s infinite alternate ease-in-out;
+  margin-left: 0.5rem;
+  height: 20px;
+  width: 20px;
 }
 .bio__bottom {
   margin-top: 1rem;
@@ -770,11 +773,16 @@ html:has(.toggle__checkbox:checked) {
   .project-active {
     padding: 1rem 1rem;
   }
+  .bio__arrow {
+    height: 10px;
+    width: 10px;
+  }
 }
 @media (max-width: 800px) {
   .container {
     row-gap: 8rem;
   }
+
   .navigation {
     font-size: var(--font-size-16);
   }
