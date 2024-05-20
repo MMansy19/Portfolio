@@ -523,12 +523,15 @@ ol {
 .skills__list.backend li:not([data-type="backend"]) {
   display: none;
 }
-/* .skills__list.general li:not([data-type="general"]) {
+.skills__list.general li:not([data-type="general"]) {
   display: none;
 }
 .skills__list.soft li:not([data-type="soft"]) {
   display: none;
-} */
+}
+.skills {
+  opacity: 1;
+}
 .media {
   align-items: center;
   justify-content: center;

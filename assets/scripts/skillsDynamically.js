@@ -8,25 +8,8 @@ const generateStars = (starCount) => {
 };
 // Add Skill Dynamically
 const skillsArray = [
-  {
-    name: "Linux",
-    experience: "2023",
-    stars: "3",
-    type: "",
-  },
-  {
-    name: "REST API",
-    experience: "2023",
-    stars: "3",
-    type: "",
-  },
-  {
-    name: "Git & GitHub",
-    experience: "2021",
-    stars: "5",
-    type: "",
-  },
   // Frontend Skills
+  //
   {
     name: "HTML",
     experience: "2021",
@@ -40,21 +23,33 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "Sass",
+    name: "SASS",
     experience: "2022",
     stars: "4",
     type: "frontend",
   },
   {
+    name: "Bootstrap",
+    experience: "2022",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Material UI",
+    experience: "2023",
+    stars: "5",
+    type: "frontend",
+  },
+  {
     name: "Tailwind CSS",
     experience: "2023",
-    stars: "3",
+    stars: "5",
     type: "frontend",
   },
   {
     name: "Figma",
     experience: "2023",
-    stars: "3",
+    stars: "5",
     type: "frontend",
   },
   {
@@ -71,6 +66,60 @@ const skillsArray = [
   },
   {
     name: "React.js",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "React Router",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "Context API",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "Hooks",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "Res. Design",
+    experience: "2023",
+    stars: "5",
+    type: "frontend",
+  },
+  {
+    name: "Performance optimization",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Jest (Testing)",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "Axios",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "UX/UI Design",
+    experience: "2023",
+    stars: "5",
+    type: "frontend",
+  },
+  {
+    name: "RESTful APIs",
     experience: "2023",
     stars: "3",
     type: "frontend",
@@ -89,7 +138,7 @@ const skillsArray = [
     type: "backend",
   },
   {
-    name: "Flask",
+    name: "GraphQL",
     experience: "2022",
     stars: "3",
     type: "backend",
@@ -117,6 +166,69 @@ const skillsArray = [
     experience: "2022",
     stars: "3",
     type: "backend",
+  },
+  // General Skills
+  {
+    name: "Git/GitHub",
+    experience: "2021",
+    stars: "5",
+    type: "general",
+  },
+  {
+    name: "Vite",
+    experience: "2023",
+    stars: "4",
+    type: "general",
+  },
+  {
+    name: "CI/CD",
+    experience: "2023",
+    stars: "3",
+    type: "general",
+  },
+
+  // // Soft Skills
+  {
+    name: "Problem-solving",
+    experience: "2022",
+    stars: "4",
+    type: "soft",
+  },
+  {
+    name: "Teamwork",
+    experience: "2023",
+    stars: "4",
+    type: "soft",
+  },
+  {
+    name: "Leadership",
+    experience: "2023",
+    stars: "4",
+    type: "soft",
+  },
+  {
+    name: "Flexibility",
+    experience: "2023",
+    stars: "4",
+    type: "soft",
+  },
+  {
+    name: "Self-motivation",
+    experience: "2023",
+    stars: "4",
+    type: "soft",
+  },
+  {
+    name: "communication",
+    experience: "2023",
+    stars: "4",
+    type: "soft",
+  },
+  {
+    name: "Decision-making",
+    experience: "2023",
+    stars: "4",
+    type: "soft",
   },
 ];
 
