@@ -11,17 +11,18 @@ const skillsArray = [
   // Frontend Skills
   //
   {
-    name: "React.js",
-    experience: "2023",
-    stars: "4",
+    name: "HTML",
+    experience: "2021",
+    stars: "5",
     type: "frontend",
   },
   {
-    name: "Next.js",
-    experience: "2023",
-    stars: "3",
+    name: "CSS",
+    experience: "2021",
+    stars: "5",
     type: "frontend",
   },
+
   {
     name: "JavaScript",
     experience: "2022",
@@ -34,6 +35,19 @@ const skillsArray = [
     stars: "4",
     type: "frontend",
   },
+  {
+    name: "React.js",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Next.js",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+
   {
     name: "Tailwind CSS",
     experience: "2023",
@@ -71,12 +85,17 @@ const skillsArray = [
     stars: "3",
     type: "frontend",
   },
-
   // Backend Skills
   {
     name: "Python",
     experience: "2021",
     stars: "5",
+    type: "backend",
+  },
+  {
+    name: "GraphQL",
+    experience: "2022",
+    stars: "3",
     type: "backend",
   },
   {
