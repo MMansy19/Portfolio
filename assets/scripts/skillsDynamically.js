@@ -11,14 +11,32 @@ const skillsArray = [
   // Frontend Skills
   //
   {
-    name: "HTML",
-    experience: "2021",
+    name: "React.js",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Next.js",
+    experience: "2023",
+    stars: "3",
+    type: "frontend",
+  },
+  {
+    name: "JavaScript",
+    experience: "2022",
     stars: "5",
     type: "frontend",
   },
   {
-    name: "CSS",
-    experience: "2021",
+    name: "TypeScript",
+    experience: "2023",
+    stars: "4",
+    type: "frontend",
+  },
+  {
+    name: "Tailwind CSS",
+    experience: "2023",
     stars: "5",
     type: "frontend",
   },
@@ -29,9 +47,9 @@ const skillsArray = [
     type: "frontend",
   },
   {
-    name: "Bootstrap",
-    experience: "2022",
-    stars: "4",
+    name: "Figma",
+    experience: "2023",
+    stars: "5",
     type: "frontend",
   },
   {
@@ -40,78 +58,7 @@ const skillsArray = [
     stars: "5",
     type: "frontend",
   },
-  {
-    name: "Tailwind CSS",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "Figma",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "JavaScript",
-    experience: "2022",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "TypeScript",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
-  {
-    name: "React.js",
-    experience: "2023",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "React Router",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
-  {
-    name: "Context API",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
-  {
-    name: "Hooks",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
-  {
-    name: "Res. Design",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "Performance optimization",
-    experience: "2023",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "Jest (Testing)",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
-  {
-    name: "Axios",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
+
   {
     name: "UX/UI Design",
     experience: "2023",
@@ -124,23 +71,12 @@ const skillsArray = [
     stars: "3",
     type: "frontend",
   },
-  {
-    name: "Next.js",
-    experience: "2023",
-    stars: "3",
-    type: "frontend",
-  },
+
   // Backend Skills
   {
     name: "Python",
     experience: "2021",
     stars: "5",
-    type: "backend",
-  },
-  {
-    name: "GraphQL",
-    experience: "2022",
-    stars: "3",
     type: "backend",
   },
   {
