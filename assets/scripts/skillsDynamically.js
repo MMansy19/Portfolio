@@ -92,12 +92,12 @@ const skillsArray = [
     stars: "5",
     type: "backend",
   },
-  {
-    name: "GraphQL",
-    experience: "2022",
-    stars: "3",
-    type: "backend",
-  },
+  // {
+  //   name: "GraphQL",
+  //   experience: "2022",
+  //   stars: "3",
+  //   type: "backend",
+  // },
   {
     name: "Firebase",
     experience: "2023",
