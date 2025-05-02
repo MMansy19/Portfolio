@@ -7,118 +7,55 @@ const generateStars = (starCount) => {
   return starsArray.join(" ");
 };
 
-// Add Skill Dynamically
+// Skill data categorized for better structure
 const skillsArray = [
-  // Frontend Skills
-  {
-    name: "React.js",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "Next.js",
-    experience: "2023",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "JavaScript",
-    experience: "2022",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "TypeScript",
-    experience: "2023",
-    stars: "4",
-    type: "frontend",
-  },
-  {
-    name: "Tailwind CSS",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "Figma",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
-  {
-    name: "UX/UI Design",
-    experience: "2023",
-    stars: "5",
-    type: "frontend",
-  },
+  // --- Frontend ---
+  { name: "React.js", experience: "2023", stars: 5, type: "frontend" },
+  { name: "Next.js", experience: "2023", stars: 4, type: "frontend" },
+  { name: "JavaScript", experience: "2022", stars: 5, type: "frontend" },
+  { name: "TypeScript", experience: "2023", stars: 4, type: "frontend" },
+  { name: "Tailwind CSS", experience: "2023", stars: 5, type: "frontend" },
+  { name: "Figma", experience: "2023", stars: 5, type: "frontend" },
+  { name: "UX/UI Design", experience: "2023", stars: 5, type: "frontend" },
+  { name: "HTML5", experience: "2021", stars: 5, type: "frontend" },
+  { name: "CSS3", experience: "2021", stars: 5, type: "frontend" },
+  { name: "Framer Motion", experience: "2024", stars: 4, type: "frontend" },
+  { name: "Redux", experience: "2024", stars: 3, type: "frontend" },
+  { name: "Material UI", experience: "2024", stars: 3, type: "frontend" },
+  
+  // --- Backend ---
+  { name: "Node.js", experience: "2022", stars: 3, type: "backend" },
+  { name: "MongoDB", experience: "2023", stars: 3, type: "backend" },
+  { name: "Firebase", experience: "2023", stars: 4, type: "backend" },
+  { name: "REST APIs", experience: "2022", stars: 5, type: "backend" },
+  { name: "MySQL", experience: "2023", stars: 4, type: "backend" },
+  { name: "PostgreSQL", experience: "2023", stars: 4, type: "backend" },
+  { name: "Prisma", experience: "2023", stars: 4, type: "backend" },
+  { name: "JWT Authentication", experience: "2023", stars: 4, type: "backend" },
+  { name: "Redis", experience: "2023", stars: 4, type: "backend" },
 
-  // Backend Skills
-  {
-    name: "Node.js",
-    experience: "2022",
-    stars: "3",
-    type: "backend",
-  },
-  {
-    name: "MongoDB",
-    experience: "2023",
-    stars: "3",
-    type: "backend",
-  },
-  {
-    name: "Firebase",
-    experience: "2023",
-    stars: "4",
-    type: "backend",
-  },
 
-  // General Skills
-  {
-    name: "Git/GitHub",
-    experience: "2021",
-    stars: "5",
-    type: "general",
-  },
-  {
-    name: "Docker",
-    experience: "2023",
-    stars: "4",
-    type: "general",
-  },
-  {
-    name: "CI/CD",
-    experience: "2023",
-    stars: "4",
-    type: "general",
-  },
+  // --- General ---
+  { name: "Git/GitHub", experience: "2021", stars: 5, type: "general" },
+  { name: "Docker", experience: "2023", stars: 4, type: "general" },
+  { name: "CI/CD", experience: "2023", stars: 4, type: "general" },
+  { name: "Postman", experience: "2023", stars: 5, type: "general" },
+  { name: "Agile Methodologies", experience: "2023", stars: 4, type: "general" },
+  { name: "Scrum", experience: "2023", stars: 4, type: "general" },
+  { name: "Jira", experience: "2023", stars: 4, type: "general" },
 
-  // Soft Skills
-  {
-    name: "Problem-solving",
-    experience: "2022",
-    stars: "5",
-    type: "soft",
-  },
-  {
-    name: "Teamwork",
-    experience: "2023",
-    stars: "5",
-    type: "soft",
-  },
-  {
-    name: "Communication",
-    experience: "2023",
-    stars: "5",
-    type: "soft",
-  },
-  {
-    name: "Leadership",
-    experience: "2023",
-    stars: "4",
-    type: "soft",
-  },
+  // --- Soft Skills ---
+  { name: "Problem-solving", experience: "2022", stars: 5, type: "soft" },
+  { name: "Teamwork", experience: "2023", stars: 5, type: "soft" },
+  { name: "Communication", experience: "2023", stars: 5, type: "soft" },
+  { name: "Leadership", experience: "2023", stars: 4, type: "soft" },
+  { name: "Time Management", experience: "2023", stars: 5, type: "soft" },
+  { name: "Adaptability", experience: "2023", stars: 5, type: "soft" },
+  { name: "Conflict Resolution", experience: "2023", stars: 4, type: "soft" },
 ];
+
+
+
 
 const skillsElement = document.querySelector("#skills");
 const currentYear = new Date().getFullYear();
