@@ -17,8 +17,6 @@ const skillsArray = [
   { name: "Tailwind CSS", experience: "2023", stars: 5, type: "frontend" },
   { name: "Figma", experience: "2023", stars: 5, type: "frontend" },
   { name: "UX/UI Design", experience: "2023", stars: 5, type: "frontend" },
-  { name: "HTML5", experience: "2021", stars: 5, type: "frontend" },
-  { name: "CSS3", experience: "2021", stars: 5, type: "frontend" },
   { name: "Framer Motion", experience: "2024", stars: 4, type: "frontend" },
   { name: "Redux", experience: "2024", stars: 3, type: "frontend" },
   { name: "Material UI", experience: "2024", stars: 3, type: "frontend" },
@@ -31,7 +29,7 @@ const skillsArray = [
   { name: "MySQL", experience: "2023", stars: 4, type: "backend" },
   { name: "PostgreSQL", experience: "2023", stars: 4, type: "backend" },
   { name: "Prisma", experience: "2023", stars: 4, type: "backend" },
-  { name: "JWT Authentication", experience: "2023", stars: 4, type: "backend" },
+  { name: "JWT Auth", experience: "2023", stars: 4, type: "backend" },
   { name: "Redis", experience: "2023", stars: 4, type: "backend" },
 
 
@@ -40,7 +38,7 @@ const skillsArray = [
   { name: "Docker", experience: "2023", stars: 4, type: "general" },
   { name: "CI/CD", experience: "2023", stars: 4, type: "general" },
   { name: "Postman", experience: "2023", stars: 5, type: "general" },
-  { name: "Agile Methodologies", experience: "2023", stars: 4, type: "general" },
+  { name: "Agile", experience: "2023", stars: 4, type: "general" },
   { name: "Scrum", experience: "2023", stars: 4, type: "general" },
   { name: "Jira", experience: "2023", stars: 4, type: "general" },
 
@@ -49,9 +47,7 @@ const skillsArray = [
   { name: "Teamwork", experience: "2023", stars: 5, type: "soft" },
   { name: "Communication", experience: "2023", stars: 5, type: "soft" },
   { name: "Leadership", experience: "2023", stars: 4, type: "soft" },
-  { name: "Time Management", experience: "2023", stars: 5, type: "soft" },
   { name: "Adaptability", experience: "2023", stars: 5, type: "soft" },
-  { name: "Conflict Resolution", experience: "2023", stars: 4, type: "soft" },
 ];
 
 
